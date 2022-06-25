@@ -4,7 +4,7 @@
         played in schools during the class hours. It is known as 'HAND-CRICKET'
 
         This is created by Vivek Kumar. You can surely use this for education
-        purpose but beware If you get caught using it for commercially purpose
+        purpose but beware if you get caught using it for commercially purpose
         then you may have to face problems.
 
         YALA YOLO !!!
