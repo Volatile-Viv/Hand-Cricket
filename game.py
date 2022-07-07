@@ -75,7 +75,7 @@ def menu():
             But if your entered number gets matched with the Computer
             then you will get out.
 
-            For more knowledge explore the game !!!
+            For more knowledge, explore the game !!!
 
         \n\n''')
 
