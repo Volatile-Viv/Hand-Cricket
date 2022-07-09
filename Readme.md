@@ -7,7 +7,7 @@
         purpose but beware if you get caught using it for commercially purpose
         then you may have to face problems.
 
-        YALA YOLO !!!
+        YALA-YOLO !!!
         ---------------------------------------------------------------------------
 
         PROJECT TITLE: HAND-CRICKET.
