@@ -10,5 +10,5 @@
         YALA YOLO !!!
         ---------------------------------------------------------------------------
 
-        PROJECT TITLE: HAND-CRICKET
+        PROJECT TITLE: HAND-CRICKET.
         VERSION or DATE: v1.0 , 25-02-2020
