@@ -118,16 +118,19 @@ def game():
     print("ENTER ANY NUMBER BETWEEN 1 TO 6\n")
     user_input = int(input("Enter here--> "))
     pc_input = random.randint(1, 6)
+    print("Computer --> ", pc_input)
 
     if user_input < 1 or user_input > 6:
         print("Invalid Input !!!")
 
     k = user_input + pc_input
+    print("Overall Number --> ", k)
+
     deci = 0
     toss_won = 0
 
     if k % 2 == 0:
-        if toss_input ==  1:
+        if toss_input == 1:
             print("You won the toss :)")
             print('''
                    What do you want to do first Bat ot Bowl ?
@@ -141,7 +144,7 @@ def game():
 
         else:
             print("You lose the toss :(")
-            temp = random.randint(0,1)
+            temp = random.randint(0, 1)
             if temp == 1:
                 print('Computer has chosen to Bat first.')
                 runs = bat()
@@ -152,7 +155,7 @@ def game():
                 runs = bat()
 
     else:
-        if toss_input ==  1:
+        if toss_input == 1:
             print("You won the toss :)")
             print('''
                    What do you want to do first Bat ot Bowl ?
@@ -166,7 +169,7 @@ def game():
 
         else:
             print("You lose the toss :(")
-            temp = random.randint(0,1)
+            temp = random.randint(0, 1)
             if temp == 1:
                 print('Computer has chosen to Bat first.')
                 runs = bat()
@@ -229,9 +232,12 @@ def game():
 def bat():
     runs = 0
 
-    wish_good = ['Yoho', 'Nice Shot', 'Keep it up', 'You are awesome', 'Osm Shot']
-    wish_bad = ['OOPS', 'That was bad shot', 'Better luck next time', 'You are out', 'Bad luck']
-    wish_boundary = ['Nice Boundary', 'Going right towards boundary ', 'OP', 'You are killing it', 'Nice Shot']
+    wish_good = ['Yoho', 'Nice Shot', 'Keep it up',
+                 'You are awesome', 'Osm Shot']
+    wish_bad = ['OOPS', 'That was bad shot',
+                'Better luck next time', 'You are out', 'Bad luck']
+    wish_boundary = ['Nice Boundary', 'Going right towards boundary ',
+                     'OP', 'You are killing it', 'Nice Shot']
 
     l = random.randint(0, 4)
 
@@ -256,7 +262,8 @@ def bat():
 
         elif user > 0 or user < 7:
             if user == pc:
-                print("\n\nY O U  --> ", user , "\t\t\t", pc," <-- C O M P U T E R ")
+                print("\n\nY O U  --> ", user, "\t\t\t",
+                      pc, " <-- C O M P U T E R ")
                 print("\n= = = = = = = = = = O U T = = = = = = = = = = ")
                 print("\n\t\t", wish_bad[l])
                 print("\n\t\tTotal Runs --> ", runs)
@@ -264,13 +271,15 @@ def bat():
 
             elif user == 4 or user == 6:
                 runs += user
-                print("\n\nY O U  --> ", user , "\t\t\t", pc," <-- C O M P U T E R ")
+                print("\n\nY O U  --> ", user, "\t\t\t",
+                      pc, " <-- C O M P U T E R ")
                 print('\n\t\t', wish_boundary[l])
                 print("\t\tTotal Runs --> ", runs)
 
             else:
                 runs += user
-                print("\n\nY O U  --> ", user , "\t\t\t", pc," <-- C O M P U T E R ")
+                print("\n\nY O U  --> ", user, "\t\t\t",
+                      pc, " <-- C O M P U T E R ")
                 print('\n\t\t', wish_good[l])
                 print("Total Runs --> ", runs)
     return runs
@@ -300,14 +309,16 @@ def bowl():
 
         elif user > 0 or user < 7:
             if user == pc:
-                print("\n\nY O U  --> ", user , "\t\t\t", pc," <-- C O M P U T E R ")
+                print("\n\nY O U  --> ", user, "\t\t\t",
+                      pc, " <-- C O M P U T E R ")
                 print("\n\t\t= = = = = OUT = = = = = ")
                 print("\n\t\tYou Got the Wicket")
                 break
 
             elif user != pc:
                 pc_runs += pc
-                print("\n\nY O U  --> ", user , "\t\t\t", pc," <-- C O M P U T E R ")
+                print("\n\nY O U  --> ", user, "\t\t\t",
+                      pc, " <-- C O M P U T E R ")
                 print("\t\tTotal Computer runs --> ", pc_runs)
 
     return pc_runs
@@ -317,6 +328,7 @@ def end():
 
     print('\n\nI hope you have enjoyed this game !!!')
     exit()
+
 
 intro()
 menu()
