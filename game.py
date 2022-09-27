@@ -250,15 +250,17 @@ def bat():
     user = ''
 
     while user != 'Q':
-        user = int(input('\nEnter here -> '))
+        userS = input('\nEnter here -> ')
 
         pc = random.randint(1, 6)
 
+        if userS == 'Q' or userS == 'q':
+            end()
+
+        user = int(userS)
+
         if user < 1 or user > 6:
             print('Invalid Input !!!')
-
-        elif user == 'Q':
-            end()
 
         elif user > 0 or user < 7:
             if user == pc:
@@ -285,6 +287,13 @@ def bat():
     return runs
 
 
+def end():
+
+    print('\n\nI hope you have enjoyed this game !!!')
+    print('\n\t- Vivek Kumar')
+    exit()
+
+
 def bowl():
     pc_runs = 0
 
@@ -296,16 +305,18 @@ def bowl():
 
     user = ''
 
-    while user != 'Q':
-        user = int(input('\nEnter here -> '))
+    while user != 'Q' or user != 'q':
+        userS = input('\nEnter here -> ')
 
         pc = random.randint(1, 6)
 
+        if userS == 'Q' or userS == 'q':
+            end()
+
+        user = int(userS)
+
         if user < 1 or user > 6:
             print('Invalid Input !!!')
-
-        elif user == 'Q':
-            end()
 
         elif user > 0 or user < 7:
             if user == pc:
@@ -324,13 +335,5 @@ def bowl():
     return pc_runs
 
 
-def end():
-
-    print('\n\nI hope you have enjoyed this game !!!')
-    exit()
-
-
 intro()
 menu()
-
-print('\n\t- Vivek Kumar')
